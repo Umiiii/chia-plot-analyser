@@ -157,7 +157,7 @@ class Job:
 
     # TODO: make this more useful and complete, and/or make it configurable
     def status_str_long(self):
-        return '{plot_id}\nk={k} r={r} b={b} u={u}\ntmp:{tmp}\ntmp2:{tmp2}\ndst:{dst}\nlogfile:{logfile}'.format(
+        return '{plot_id}\nk={k} r={r} b={b} u={u}\ntmp:{tmp}\ntmp2:{tmp2}\nlogfile:{logfile}'.format(
             plot_id = self.plot_id,
             k = self.k,
             r = self.r,
@@ -165,7 +165,6 @@ class Job:
             u = self.u,
             tmp = self.tmpdir,
             tmp2 = self.tmp2dir,
-            dst = self.dstdir,
             plotid = self.plot_id,
             logfile = self.logfile
             )
